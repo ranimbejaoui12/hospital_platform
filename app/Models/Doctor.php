@@ -3,12 +3,9 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
-
 class Doctor extends Model
 {
-    //
-=======
+
 use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
 class Doctor extends Eloquent
@@ -22,5 +19,4 @@ class Doctor extends Eloquent
         'phone',
         'availability',
     ];
->>>>>>> 36b2a0c (Doctor Management backend)
 }

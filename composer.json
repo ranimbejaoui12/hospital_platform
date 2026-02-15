@@ -10,9 +10,13 @@
         "jenssegers/mongodb": "*",
         "laravel/framework": "^12.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         "laravel/sanctum": "^4.3",
 >>>>>>> 36b2a0c (Doctor Management backend)
+=======
+        "laravel/sanctum": "^4.3",
+>>>>>>> restore-ranim
         "laravel/tinker": "^2.10.1",
         "mongodb/laravel-mongodb": "^5.6"
     },

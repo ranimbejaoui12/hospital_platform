@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
+
     "content-hash": "33a004e51e02056ed68a38c780d11efa",
-=======
+
     "content-hash": "e1cff600a6dc38455c4e37a9cacfba4f",
->>>>>>> 36b2a0c (Doctor Management backend)
+
     "packages": [
         {
             "name": "brick/math",
@@ -1339,7 +1339,10 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> restore-ranim
             "name": "laravel/sanctum",
             "version": "v4.3.1",
             "source": {
@@ -1403,7 +1406,10 @@
             "time": "2026-02-07T17:19:31+00:00"
         },
         {
+<<<<<<< HEAD
 >>>>>>> 36b2a0c (Doctor Management backend)
+=======
+>>>>>>> restore-ranim
             "name": "laravel/serializable-closure",
             "version": "v2.0.9",
             "source": {

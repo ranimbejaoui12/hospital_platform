@@ -17,8 +17,5 @@ require __DIR__.'/../vendor/autoload.php';
 /** @var Application $app */
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
-<<<<<<< HEAD
-$app->handleRequest(Request::capture());
-=======
 
->>>>>>> 36b2a0c (Doctor Management backend)
+$app->handleRequest(Request::capture());
