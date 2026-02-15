@@ -35,6 +35,7 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'guards' => [
         'web' => [
             'driver' => 'session',
@@ -42,6 +43,20 @@ return [
         ],
     ],
 
+=======
+   'guards' => [
+    'web' => [
+        'driver' => 'session',
+        'provider' => 'users',
+    ],
+
+    'sanctum' => [
+        'driver' => 'sanctum',
+        'provider' => 'users',
+    ],
+],
+
+>>>>>>> 36b2a0c (Doctor Management backend)
     /*
     |--------------------------------------------------------------------------
     | User Providers

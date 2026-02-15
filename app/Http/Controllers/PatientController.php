@@ -9,7 +9,11 @@ class PatientController extends Controller
 {
     public function index()
     {
+<<<<<<< HEAD
         return Patient::all();
+=======
+        
+>>>>>>> 36b2a0c (Doctor Management backend)
     }
 
     public function store(Request $request)

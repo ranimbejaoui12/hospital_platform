@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+<<<<<<< HEAD
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -17,10 +18,27 @@ class User extends Authenticatable
      *
      * @var list<string>
      */
+=======
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+class User extends Authenticatable
+{
+    use HasApiTokens, HasFactory, Notifiable;
+
+    // حددنا الاتصال بـ MongoDB
+    protected $connection = 'mongodb';
+    protected $collection = 'users';
+
+    // الحقول القابلة للتعديل
+>>>>>>> 36b2a0c (Doctor Management backend)
     protected $fillable = [
         'name',
         'email',
         'password',
+<<<<<<< HEAD
     ];
 
     /**
@@ -28,11 +46,18 @@ class User extends Authenticatable
      *
      * @var list<string>
      */
+=======
+        'role', // مهم لو عندك roles: admin / doctor / patient
+    ];
+
+    // الحقول المخفية
+>>>>>>> 36b2a0c (Doctor Management backend)
     protected $hidden = [
         'password',
         'remember_token',
     ];
 
+<<<<<<< HEAD
     /**
      * Get the attributes that should be cast.
      *
@@ -45,4 +70,11 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+=======
+    // casts
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+        'password' => 'hashed', // Laravel 12 يقوم بالباسورد hashing تلقائياً
+    ];
+>>>>>>> 36b2a0c (Doctor Management backend)
 }
